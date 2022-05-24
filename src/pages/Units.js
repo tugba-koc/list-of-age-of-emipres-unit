@@ -1,8 +1,11 @@
 import React from 'react'
+import Greeting from '../components/Greeting'
 
 function Units() {
   return (
-    <div>Units</div>
+    <React.Fragment>
+      <Greeting />
+    </React.Fragment>
   )
 }
 

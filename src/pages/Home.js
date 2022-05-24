@@ -1,6 +1,6 @@
 import React from 'react'
-import Cover from '../components/HomePages/Cover'
-import Greeting from '../components/HomePages/Greeting'
+import Cover from '../components/HomePage/Cover'
+import Greeting from '../components/Greeting'
 
 function Home() {
   return (
