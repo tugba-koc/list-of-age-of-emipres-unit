@@ -1,0 +1,19 @@
+.greeting--header-line {
+    text-align: center;
+    margin-top: 50px;
+    font-weight: 600;
+    font-size: 24px;
+    color: white
+}
+
+.greeting--image {
+    width: 600px;
+    height: auto;
+    object-fit: cover;
+    margin: 50px 0
+}
+
+.greeting--coverage {
+    display: flex;
+    justify-content: center;
+}

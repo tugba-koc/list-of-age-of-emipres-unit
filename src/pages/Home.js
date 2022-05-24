@@ -1,8 +1,13 @@
 import React from 'react'
+import Cover from '../components/HomePages/Cover'
+import Greeting from '../components/HomePages/Greeting'
 
 function Home() {
   return (
-    <div>Home</div>
+    <React.Fragment>
+      <Greeting />
+      <Cover />
+    </React.Fragment>
   )
 }
 
