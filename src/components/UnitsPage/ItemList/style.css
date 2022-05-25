@@ -1,0 +1,21 @@
+table {
+    width: 450px !important;
+    background-color: rgba(250, 235, 215, 0.512);
+    margin: 50px auto 0;
+    max-height: 400px;
+    overflow: auto;
+    display: inline-block;
+        table-layout: fixed;
+        word-wrap: break-word;
+}
+
+.App {
+    text-align: center;
+}
+
+thead {
+    position: sticky; 
+    top: 0; 
+    z-index: 1;
+    background-color: white;
+}

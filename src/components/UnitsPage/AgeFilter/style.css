@@ -1,0 +1,19 @@
+.button-group {
+    display: inline-flex;
+    flex-direction: row;
+    border-radius: 50px;
+}
+
+.button-item {
+    border: 1px solid rgb(99, 159, 255);
+    padding: 6px 12px;
+    background-color: white;
+}
+
+.button-item:first-child {
+    border-radius: 10px 0 0 10px;
+}
+
+.button-item:last-child {
+    border-radius: 0 10px 10px 0;
+}
