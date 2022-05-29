@@ -2,10 +2,11 @@
     display: inline-flex;
     flex-direction: row;
     border-radius: 50px;
+    margin-bottom: 10px;
 }
 
 .button-item {
-    border: 1px solid rgb(99, 159, 255);
+    border: 1px solid rgb(144, 186, 255);
     padding: 6px 12px;
     background-color: white;
 }
@@ -16,4 +17,16 @@
 
 .button-item:last-child {
     border-radius: 0 10px 10px 0;
+}
+
+.age-filter-header-main {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.age-filter-wrapper {
+    width: 480px;
+    background-color: rgba(199, 199, 199, 0.384);
+    padding: 26px 16px;
+    border-radius: 10px;
 }

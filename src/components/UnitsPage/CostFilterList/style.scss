@@ -1,0 +1,68 @@
+// #costFilterItem:checked ~ .range {
+//   display: inline-block;
+//   pointer-events: auto;
+//   -webkit-appearance: none;
+//   background-color: rgb(143, 244, 255);
+// }
+
+// #costFilterItem:checked ~ .text {
+//     display: inline-block;
+//   }
+
+//   .text {
+//       display: none;
+//   }
+
+  .cost-filter-wrapper {
+    // display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 480px;
+    background-color: rgba(199, 199, 199, 0.384);
+    padding: 24px 16px  16px;
+    border-radius: 10px;
+  }
+
+  .cost-filter-header-main {
+    color: white;
+    margin-bottom: 20px;
+    text-align: left;
+
+  }
+
+  // ITEM PART
+
+  .filter-configure-line {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin: 15px 0;
+      width: 100%;
+  }
+
+  .filter-configure-line:nth-of-type(2) {
+    border-top: 1px solid rgba(177, 177, 177, 0.7);
+    border-bottom: 1px solid rgba(177, 177, 177, 0.7);
+    padding: 15px 0;
+}
+
+  .cost-filter-label {
+    color: white;
+    margin-right: 50px;
+    margin-left: 10px;
+  }
+
+  .text {
+    color: white;
+    margin-left: 20px;
+    font-size: 16px;
+    border-bottom: 1px solid white;
+    padding-bottom: 8px;
+    margin-left: auto;
+  }
+
+
+
+

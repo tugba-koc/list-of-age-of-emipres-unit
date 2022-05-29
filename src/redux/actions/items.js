@@ -1,4 +1,3 @@
-import items from "../reducers/items";
 import * as type from "../reducers/types";
 
 export function getItems(){
@@ -7,9 +6,23 @@ export function getItems(){
     }
 }
 
-export function filterItems(el){
+export function filterItemsByAge(el){
     return {
-        type: type.GET_FILTERED_ITEMS,
+        type: type.GET_FILTERED_ITEMS_BY_AGE,
         payload: el
+    }
+}
+
+export function filterItemsByCost(el){
+    return {
+        type: type.GET_FILTERED_ITEMS_BY_COST,
+        payload: el
+    }
+}
+
+export function removeCostFilter(el){
+    return {
+        type: type.REMOVE_COST_FILTER,
+        payload: el,
     }
 }
