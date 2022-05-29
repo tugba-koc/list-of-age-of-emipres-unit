@@ -1,0 +1,27 @@
+.unit-layout-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    justify-content: space-between;
+    padding: 0 85px;
+}
+
+.left-part {
+    text-align: left;
+}
+
+@media only screen and (max-width: 1180px) {
+    .unit-layout-wrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .left-part {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto
+    }
+    
+}
