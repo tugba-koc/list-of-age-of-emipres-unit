@@ -7,6 +7,7 @@ function AgeFilter() {
 
   const dispatch = useDispatch();
 
+  // Age filter options 
   const FilterNames = ["All", "Dark", "Feudal", "Castle", "Imperial"];
 
   return (

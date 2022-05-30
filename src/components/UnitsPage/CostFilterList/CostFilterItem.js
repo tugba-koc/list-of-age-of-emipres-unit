@@ -16,6 +16,7 @@ function CostFilterItem({ el }) {
   const filterStateCheck = useSelector(state => state.items.filterStateCheck);
 
 
+  // when the slider is changed
   const updateRange = (e, newValue) => {
     const name = e.target.name
     setValue(newValue);
@@ -23,6 +24,7 @@ function CostFilterItem({ el }) {
     dispatch(filterItemsByCost({ ...filterStateCost, ...stateCost }));
   }
 
+  // when the checkbox is changed
   const handleChange = (e, el) => {
     const newObject = { ...isChecked };
     newObject[`${el}`] = e.target.checked;

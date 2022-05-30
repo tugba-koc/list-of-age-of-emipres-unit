@@ -22,12 +22,14 @@ function ItemList() {
         dispatch(getItems());
     }, [dispatch])
 
+    // If loading, show spinner
     if (loading) {
         return (
             <Spinner />
         )
     }
 
+    // If error, show error
     if (error) {
         return (
             <Error />

@@ -6,11 +6,14 @@ function Greeting() {
 
   const location = useLocation();
 
+  // home page greeting
   let greeting = "Welcome!";
 
+  // if user is on units page
   let greetingUnits = "Units Page";
 
-  let greetingDetailUnit = "Detail Of Unit Page";
+  // if user is on unit detail page
+  let greetingDetailUnit = "Unit Detail Page";
 
   return (
     <div className="greeting--header-line">{ location.pathname === "/units" ? greetingUnits : location.pathname === "/" ? greeting : greetingDetailUnit }</div>

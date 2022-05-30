@@ -1,15 +1,12 @@
 import React from 'react';
 import {useNavigate} from 'react-router-dom';
-import {useSelector} from 'react-redux';
 
 function Item({item}) {
     const navigate = useNavigate();
 
-    let isFilteredByCost = useSelector(state => state.items.isFilteredByCost);
-
+    // navigate to detail page
     const handleOnClick = () => {
         navigate('/units/detail-of-unit/'+ item.id);
-        isFilteredByCost = !isFilteredByCost;
     };
   
     return (

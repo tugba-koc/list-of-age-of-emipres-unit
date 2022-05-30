@@ -3,9 +3,9 @@ import React from 'react';
 
 function Error() {
   return (
-    <tr>
-        Error 
-    </tr>
+    <React.Fragment>
+        Please, try again later.
+    </React.Fragment>
   )
 }
 

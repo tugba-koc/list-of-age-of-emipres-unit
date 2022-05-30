@@ -5,6 +5,7 @@ import CostFilterItem from './CostFilterItem';
 
 function CostFilter() {
 
+  // cost filter options
   let costFilter = [
     {
       name: "Wood",
