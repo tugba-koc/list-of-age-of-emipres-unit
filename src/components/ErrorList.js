@@ -1,5 +1,5 @@
 import React from 'react';
-import "./style.css";
+import "../scss/component/main.scss";
 
 function ErrorList() {
   return (

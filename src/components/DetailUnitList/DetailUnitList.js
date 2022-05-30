@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from "react-redux";
 import { getDetailOfUnit } from "../../redux/actions/items";
-import "../style.css";
+import "../../scss/component/main.scss";
 
 function DetailUnitList({ unit_id }) {
 

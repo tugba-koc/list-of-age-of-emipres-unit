@@ -1,5 +1,5 @@
 import React from 'react';
-import "./style.css";
+import "../scss/component/main.scss";
 import { useLocation } from 'react-router-dom'
 
 function Greeting() {

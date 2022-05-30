@@ -1,3 +1,6 @@
+@import "./scss/variable.scss";
+@import "./scss/inheritance.scss";
+
 .App {
 	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
@@ -21,11 +24,11 @@ nav {
   text-align: right;
   padding: 12px 0;
   width: 100%;
-  background-color: rgba(245, 245, 220, 0.387);
+  background-color: $secondary-background-color;
  a {
   margin: 0 20px;
-  color: white;
-  font-size: 18px;
+  color: $primary-color;
+  font-size: $font-size-big;
   font-weight: 600;
   text-decoration: none;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
