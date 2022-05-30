@@ -1,42 +1,27 @@
-// #costFilterItem:checked ~ .range {
-//   display: inline-block;
-//   pointer-events: auto;
-//   -webkit-appearance: none;
-//   background-color: rgb(143, 244, 255);
-// }
+@import "../variable.scss";
+@import "../inheritance.scss";
 
-// #costFilterItem:checked ~ .text {
-//     display: inline-block;
-//   }
-
-//   .text {
-//       display: none;
-//   }
-
-  .cost-filter-wrapper {
-    // display: flex;
+.cost-filter-wrapper {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
     width: 480px;
-    background-color: rgba(199, 199, 199, 0.384);
+    background-color: $secondary-background-color;
     padding: 24px 16px  16px;
     border-radius: 10px;
   }
 
   .cost-filter-header-main {
-    color: white;
+    color: $primary-color;
     margin-bottom: 20px;
     text-align: left;
-
   }
 
   // ITEM PART
 
   .filter-configure-line {
-      display: flex;
-      flex-direction: row;
+    @extend .flex-direction-row;
       align-items: center;
       margin: 15px 0;
       width: 100%;
@@ -49,16 +34,15 @@
 }
 
   .cost-filter-label {
-    color: white;
+    color: $primary-color;
     margin-right: 50px;
     margin-left: 10px;
   }
 
   .text {
-    color: white;
-    margin-left: 20px;
-    font-size: 16px;
-    border-bottom: 1px solid white;
+    color: $primary-color;
+    font-size: $font-size;
+    border-bottom: 1px solid $primary-color;
     padding-bottom: 8px;
     margin-left: auto;
   }

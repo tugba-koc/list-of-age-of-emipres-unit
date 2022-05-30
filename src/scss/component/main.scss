@@ -1,0 +1,33 @@
+@import "../variable.scss";
+@import "../inheritance.scss";
+
+.red-text {
+    margin-top: 50px;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-big;
+    color: $red-text-color
+}
+
+.table-detail {
+    width: 320px !important;
+    margin-top: 50px;
+}
+
+.greeting--header-line {
+    text-align: center;
+    margin-top: 50px;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-bigger;
+    color: $primary-color
+}
+
+.greeting--image {
+    width: 600px;
+    height: auto;
+    object-fit: cover;
+    margin: 50px 0
+}
+
+.greeting--coverage {
+    @extend .flex-content-center;
+}

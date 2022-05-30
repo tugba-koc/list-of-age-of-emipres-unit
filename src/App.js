@@ -1,7 +1,8 @@
-import './App.css';
+import './App.scss';
 import { Routes, Route, Link } from "react-router-dom";
 import Home from './pages/Home';
 import Units from './pages/Units';
+import DetailUnit from './pages/DetailUnit';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="units" element={<Units />} />
+        <Route path="/units/detail-of-unit/:unit_id" element={<DetailUnit />} />
       </Routes>
     </div>
   );

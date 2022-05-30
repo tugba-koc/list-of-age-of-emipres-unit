@@ -1,5 +1,5 @@
 import React from 'react';
-import "./HomePage/style.css";
+import "./style.css";
 import { useLocation } from 'react-router-dom'
 
 function Greeting() {
@@ -10,8 +10,10 @@ function Greeting() {
 
   let greetingUnits = "Units Page";
 
+  let greetingDetailUnit = "Detail Of Unit Page";
+
   return (
-    <div className="greeting--header-line">{ location.pathname === "/units" ? greetingUnits : greeting }</div>
+    <div className="greeting--header-line">{ location.pathname === "/units" ? greetingUnits : location.pathname === "/" ? greeting : greetingDetailUnit }</div>
   )
 }
 

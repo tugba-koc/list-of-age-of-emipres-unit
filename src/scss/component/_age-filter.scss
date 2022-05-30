@@ -1,3 +1,5 @@
+@import "../variable.scss";
+
 .button-group {
     display: inline-flex;
     flex-direction: row;
@@ -8,7 +10,7 @@
 .button-item {
     border: 1px solid rgb(144, 186, 255);
     padding: 6px 12px;
-    background-color: white;
+    background-color: $primary-color;
 }
 
 .button-item:first-child {
@@ -20,13 +22,13 @@
 }
 
 .age-filter-header-main {
-    color: white;
+    color: $primary-color;
     margin-bottom: 20px;
 }
 
 .age-filter-wrapper {
     width: 480px;
-    background-color: rgba(199, 199, 199, 0.384);
+    background-color: $secondary-background-color;
     padding: 26px 16px;
     border-radius: 10px;
 }

@@ -3,7 +3,7 @@ import Greeting from '../components/Greeting'
 import AgeFilter from '../components/UnitsPage/AgeFilter/AgeFilter'
 import CostFilterList from '../components/UnitsPage/CostFilterList/CostFilterList'
 import ItemList from '../components/UnitsPage/ItemList/ItemList';
-import "./style.css"
+import "../scss/layout/main.scss"
 
 function UnitLayout() {
   return (

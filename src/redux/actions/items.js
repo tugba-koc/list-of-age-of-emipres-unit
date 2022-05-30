@@ -26,3 +26,10 @@ export function removeCostFilter(el){
         payload: el,
     }
 }
+
+export function getDetailOfUnit(el){
+    return {
+        type: type.GET_DETAIL_OF_UNIT,
+        payload: el,
+    }
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 import image from  "../../img/greeting.jpg";
-import "./style.css"
+import "../style.css"
 
 function Cover() {
   return (

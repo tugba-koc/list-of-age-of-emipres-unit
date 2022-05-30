@@ -30,7 +30,7 @@
       "cost": {
         "Wood": 25,
         "Gold": 45
-      },
+      }, 
       "build_time": 27,
       "reload_time": 2,
       "attack_delay": 0.35,

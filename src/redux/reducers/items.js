@@ -7,6 +7,7 @@ const initialState = {
     filterStateCheck: {},
     filteredItemsbyAge: [],
     filteredItemsbyCost: [],
+    detailOfUnit: [],
     isFilteredByAge: false,
     isFilteredByCost: false,
     loading: false,
@@ -29,7 +30,6 @@ export default function items(state = initialState, action) {
                 filteredItemsbyAge: action.items
             }
         case type.GET_FILTERED_ITEMS_BY_AGE:
-            // console.log(state.filterStateCost)
             return {
                 ...state,
                 isFilteredByAge: true,
@@ -48,7 +48,7 @@ export default function items(state = initialState, action) {
                             return el
                         }
                     } else {
-                        state.filteredItemsbyCost = []
+                        return null
                     }
                 }
                 ) 
@@ -65,7 +65,7 @@ export default function items(state = initialState, action) {
                     if (el.cost !== null && el.cost !== "" && el.cost !== undefined && Object.keys(el.cost).every(item => Object.keys(action.payload).includes(item)) && Object.keys(el.cost).every(item => (Number(el.cost[item]) <= Number(action.payload[item].max)) &&  (Number(el.cost[item]) >= Number(action.payload[item].min)))) {
                         return el
                     } else {
-                        state.filteredItemsbyCost = []
+                        return null
                     }
                 }
                 ) : state.filteredItemsbyAge.filter((el) => {
@@ -73,7 +73,7 @@ export default function items(state = initialState, action) {
                     if (el.cost !== null && el.cost !== "" && el.cost !== undefined && Object.keys(el.cost).every(item => Object.keys(action.payload).includes(item)) && Object.keys(el.cost).every(item => (Number(el.cost[item]) <= Number(action.payload[item].max)) &&  (Number(el.cost[item]) >= Number(action.payload[item].min)))) {
                         return el
                     } else {
-                        state.filteredItemsbyCost = []
+                        return null
                     }
                 }
                 )
@@ -81,7 +81,6 @@ export default function items(state = initialState, action) {
 
 
         case type.REMOVE_COST_FILTER:
-            console.log("REMOVE_COST_FILTER",action.payload)
 
         return {
                 ...state,
@@ -90,23 +89,26 @@ export default function items(state = initialState, action) {
                 filterStateCheck: action.payload,
                 filteredItemsbyCost: !state.isFilteredByAge ? state.items.filter((el) => {
                     if (el.cost !== null && el.cost !== "" && el.cost !== undefined && state.filterStateCost && Object.keys(el.cost).every(item => Object.keys(state.filterStateCost).includes(item) && action.payload[item]) && Object.keys(el.cost).every(item => (Number(el.cost[item]) >= Number(state.filterStateCost[item].min)) && (Number(el.cost[item]) <= Number(state.filterStateCost[item].max)))) {
-                        console.log("2 control")
                         return el
                     } else {
-                        console.log("3 control")
-                        state.filteredItemsbyCost = []
+                        return null
                     }
                 }
                 ) : state.filteredItemsbyAge.filter((el) => {
                     if (el.cost !== null && el.cost !== "" && el.cost !== undefined && state.filterStateCost && Object.keys(el.cost).every(item => Object.keys(state.filterStateCost).includes(item) && action.payload[item]) && Object.keys(el.cost).every(item => (Number(el.cost[item]) >= Number(state.filterStateCost[item].min)) && (Number(el.cost[item]) <= Number(state.filterStateCost[item].max)))) {
-                        console.log("1 control")
                         return el
                     } else {
-                        state.filteredItemsbyCost = []
+                        return null
                     }
                 }
                 )
             }
+
+            case type.GET_DETAIL_OF_UNIT:    
+            return {
+                    ...state,
+                    detailOfUnit : state.items.filter(el => el.id == action.payload)
+                }
 
         case type.GET_ITEMS_FAILED:
             return {

@@ -1,0 +1,30 @@
+@import "../variable.scss";
+@import "../inheritance.scss";
+
+.unit-layout-wrapper {
+    display: inline-flex;
+    grid-column-gap: 50px;
+    flex-direction: row;
+    margin-top: 50px;
+    justify-content: space-between;
+    padding: 0 5vw;
+}
+
+.left-part {
+    text-align: left;
+}
+
+@media only screen and (max-width: 1180px) {
+    .unit-layout-wrapper {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .left-part {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto
+    }
+}

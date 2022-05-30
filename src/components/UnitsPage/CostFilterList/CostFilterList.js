@@ -1,5 +1,5 @@
 import React from 'react';
-import "./style.scss";
+import "../../../scss/component/_cost-filter.scss";
 import CostFilterItem from './CostFilterItem';
 
 

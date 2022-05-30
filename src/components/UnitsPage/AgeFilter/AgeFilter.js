@@ -1,5 +1,5 @@
 import React from 'react';
-import "./style.css";
+import "../../../scss/component/_age-filter.scss";
 import { useDispatch } from 'react-redux';
 import {filterItemsByAge} from '../../../redux/actions/items';
 
@@ -12,7 +12,6 @@ function AgeFilter() {
   return (
     <div className='age-filter-wrapper'>
       <h5 className='age-filter-header-main'>Ages</h5>
-
       <div className="button-group">
         {FilterNames.map((el,index) => (
           <button onClick={()=>dispatch(filterItemsByAge(el))} key={index} type="button" className="button-item">{el}</button>
