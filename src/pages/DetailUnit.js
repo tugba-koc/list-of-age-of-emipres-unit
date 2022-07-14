@@ -1,5 +1,5 @@
 import React from 'react'
-import DetailUnitList from '../components/DetailUnitList/DetailUnitList';
+import DetailUnitList from '../components/DetailUnitList';
 import { useParams } from "react-router-dom"
 import Greeting from '../components/Greeting';
 

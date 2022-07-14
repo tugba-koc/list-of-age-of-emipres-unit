@@ -1,6 +1,6 @@
 import React from 'react';
-import image from  "../../img/greeting.jpg";
-import "../../scss/component/main.scss";
+import image from  "../img/greeting.jpg";
+import "../scss/component/main.scss";
 
 function Cover() {
   return (
